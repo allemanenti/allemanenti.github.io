@@ -28,9 +28,9 @@
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">About</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#publications">Publications</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviewer">Reviewing activity</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#teaching">Teaching</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#lectures">Lectures</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#reviewer">Reviewing activity</a></li>
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li> -->
                     <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li> -->
@@ -49,11 +49,11 @@
                     <div class="subheading mb-5">
                         Lugano, Switzerland 
                     </div>
-                    <p class="lead mb-5">Hi! I'm Alessandro, I am a Ph.D. student in Graph Deep Learning. <br>
+                    <p class="lead mb-5">Hi! I'm <b>Alessandro</b>, a Ph.D. student in Graph Deep Learning. <br>
                          I'm part of the <a href="https://gmlg.ch/" target="_blank">Graph Machine Learning Group</a> which is a research team of the <a href="https://www.idsia.ch/" target="_blank">Swiss AI Lab IDSIA</a>, under the supervision of Professor <a href="https://scholar.google.com/citations?user=zyzNf4AAAAAJ&hl=en" target="_blank">Cesare Alippi</a>. </br>
                          </br>
-                        I develop methods that learn latent relational structures to empower deep learning models — and I love exploring any
-                        model that uses latent-space representations, with a particular focus on discrete latent spaces. 
+                        I develop methods to learn <b>latent structures</b> that enhance deep learning models, with a focus on <b>discrete latent spaces</b>.
+                        I use theoretical insights to guide research on how to train latent-variable models <b>accurately and efficiently</b>.
                         </p>
                     <div class="social-icons">
                         <a class="social-icon" href="https://scholar.google.com/citations?user=T3dBGJUAAAAJ&hl=en">
@@ -77,16 +77,36 @@
             
                     <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                         <div class="flex-grow-1">
+                            <!-- Title is now a clickable download link -->
+                            <div class="subheading mb-3">
+                                <a href="assets/additional_resources/categorical_parameterization_ARXIV.pdf" download target="_blank" rel="noopener noreferrer">
+                                    Beyond Softmax: A Natural Parameterization for Categorical Random Variables
+                                </a>
+                                <div> Preprint</div>
+                            </div>
+                            <p>
+                                We show that in deep learning models using <b>latent categorical random variables</b> (e.g., VAE, RL, GNNs), the <b>softmax
+                                function</b> - commonly used to parameterize the distribution - <b>can hinder training</b>. 
+                                We theoretically motivate why this is the case using results from Information Geometry. 
+                                We then propose an alternative parameterization, the <b>catnat function</b>, that - as we prove - has <b>better information-theoretic properties</b>.
+                                Extensive empirical evidence demonstrates its effectiveness across diverse settings.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                        <div class="flex-grow-1">
                             <div class="subheading mb-3"> <a href="https://arxiv.org/abs/2405.19933"> Learning Latent Graph
                                     Structures and their Uncertainty </a> 
                                 <div> ICML 2025</div>
                                 </div>
-                            <p>In this paper, we highlight a challenge in Graph Neural Networks (GNNs), demonstrating that
-                                traditional methods struggle to learn hidden relational structures and their uncertainties. We
-                                propose a new approach that jointly learns these latent graph structures while enhancing prediction
-                                accuracy, and we provide empirical evidence to support the developed theoretical results. </p>
+                            <p>Graph Neural Networks and related models benefit from relational information, but <b>task-relevant relations are often latent</b>. 
+                                Accurately learning these latent <b>structures</b> and <b>their uncertainty</b> is difficult without <b>direct</b> supervision. 
+                                In this paper we show that <b>standard loss functions</b> (e.g., MAE, MSE, ...), even when when in a probabilistic form, <b>fail</b> to recover such probabilistic relations. We prove and empirically show that a <b>broad class of losses</b> provides stronger guarantees into <b>learning the correct uncertainty</b> over the latent variables while maintaining predictive accuracy. </p>
                         </div>
+
                     </div>
+
             
             
             
@@ -104,7 +124,7 @@
                                     <div class="flex-grow-1">
                                         <h3 class="mb-0">Ph.D. student</h3>
                                         <div class="subheading mb-3">The Swiss AI Lab IDSIA - USI, Faculty of Informatics</div>
-                                        <div>Ph.D. in Graph Deep Learning. I'm currently focusing on graph learning and spatiotemporal data processing using graph latent spaces.</div>
+                                        <div>Ph.D. in Graph Deep Learning. I study methods for learning latent variables in deep learning models more accurately and efficiently.</div>
                                         <p></p>
                                     </div>
                                     <div class="flex-shrink-0"><span class="text-primary">December 2022 - Present</span></div>
@@ -134,45 +154,6 @@
                             </div>
                         </section>
                         <hr class="m-0" />
-            
-            <!-- Reviewer -->
-            <section class="resume-section" id="reviewer">
-                <div class="resume-section-content">
-                    <h2 class="mb-5">Reviewing activity</h2>
-                    <!-- <a>I'm a reviewer for the following venues.</a> -->
-                    <br><br>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">International Conference on Machine Learning (ICML) </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2025</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">IEEE Transactions on Neural Networks and Learning Systems</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">International Conference on Learning Representations (ICLR) </div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
-                    </div>
-
-                    <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
-                        <div class="flex-grow-1">
-                            <div class="subheading mb-3">International Conference on Artificial Neural Networks (ICANN)</div>
-                        </div>
-                        <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
-                    </div>
-
-                </div>
-            </section>
-            <hr class="m-0" />
  
             <!-- Teaching -->
             
@@ -182,6 +163,13 @@
                                 <p>Contributed to course delivery through preparation of lab sessions, development of assignments and exams, and assessment of student performance.</p> 
                             </br>
                             </br>
+
+                                <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                                    <div class="flex-grow-1">
+                                        <div class="subheading mb-3">Graph Deep Learning - 6 ECTS</div>
+                                    </div>
+                                    <div class="flex-shrink-0"><span class="text-primary">Autumn Semester 2025-2026</span></div>
+                                </div>
 
                                 <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
                                     <div class="flex-grow-1">
@@ -244,6 +232,51 @@
                 </section>
                 <hr class="m-0" />
 
+
+                <!-- Reviewer -->
+                <section class="resume-section" id="reviewer">
+                    <div class="resume-section-content">
+                        <h2 class="mb-5">Reviewing activity</h2>
+                        <!-- <a>I'm a reviewer for the following venues.</a> -->
+                        <br><br>
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <div class="subheading mb-3">International Conference on Learning Representations (ICLR) </div>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2026</span></div>
+                        </div>
+
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <div class="subheading mb-3">International Conference on Machine Learning (ICML) </div>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2025</span></div>
+                        </div>
+                
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <div class="subheading mb-3">IEEE Transactions on Neural Networks and Learning Systems</div>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+                        </div>
+                
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <div class="subheading mb-3">International Conference on Learning Representations (ICLR) </div>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+                        </div>
+                
+                        <div class="d-flex flex-column flex-md-row justify-content-between mb-3">
+                            <div class="flex-grow-1">
+                                <div class="subheading mb-3">International Conference on Artificial Neural Networks (ICANN)</div>
+                            </div>
+                            <div class="flex-shrink-0"><span class="text-primary">2024</span></div>
+                        </div>
+                
+                    </div>
+                </section>
+                <hr class="m-0" />
 
 
 
